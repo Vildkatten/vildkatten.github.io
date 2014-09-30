@@ -1,0 +1,67 @@
+body {
+	background: black;
+	color: white;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+video {
+	max-width: 100%;
+	border-radius: 15%;
+	-moz-border-radius: 15%;
+	-webkit-border-radius: 15%;
+	box-shadow: 1px 1px 10px white;
+	-webkit-box-shadow: 1px 1px 10px white;
+	-moz-box-shadow: 1px 1px 10px white; 
+}
+
+.wrapper {
+	margin: 0px auto;
+	max-width: 480px;
+
+}
+#play {
+	cursor: pointer;
+}
+
+#pause {
+	cursor: pointer;
+}
+
+nav {
+	display: inline-block;
+}
+
+a {
+	cursor: pointer;
+}
+.trip {
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+
+}
+.content {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+}
+.content:hover .trip{
+	tranform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.audioPlayer {
+	margin-top: 20px;
+
+}
+
+@media screen and (min-width: 480px){
+	.wrapper {
+		max-width: 800px;
+	}
+}
+
+

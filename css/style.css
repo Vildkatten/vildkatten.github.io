@@ -1,0 +1,361 @@
+
+body {
+  
+  background-color: white;
+}
+
+.container-fluid {
+	margin-left: 5%;
+	margin-right: 5%;
+  margin-top: 20px;
+}
+
+.navbar-inverse .navbar-inner{
+  opacity: .85;
+  background: #337C61;
+  border: none;
+  border-left: 55px groove #179B6B;
+}
+
+.nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a,
+  .btn {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
+
+.hero-unit {
+  background: #242728; 
+  color: #5EA58A;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  border-right: 55px solid #FF8925;
+          
+}
+
+#front {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+p {
+  color: #0A181F;
+}
+.hero {
+  color: white;
+  font-size: 1.4em;
+}
+
+h1:first-letter {
+  color: #FF8926;
+}
+
+h2 {
+  color: #337C61;
+}
+
+h2:first-letter {
+  color: #FF8926;
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+.hero-unit:first-letter {
+  color: #FF8926;
+  font-size: 1.2em;
+
+}
+
+.frontpage {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.frontpage h1{
+  margin-top: 60px;
+}
+
+.frontpage:first-letter {
+  color: #FF8926;
+  font-size: 1.2em;
+}
+
+
+
+#myCarousel {
+  margin-bottom: 0;
+}
+
+
+
+.navbar-inverse .brand:hover {
+  color: #FF7400;
+}
+
+.navbar .brand {
+  
+  padding: 25px 10px 5px;
+  font-size: 3.2em;
+  font-family: Arial, Sans-Serif;
+  font-weight: bold;
+  
+}
+
+.navbar .nav {
+  
+  margin: 10px 20px 0 0;
+
+}
+
+.navbar-inverse .nav > li > a:hover {
+  
+  color: #FF7400;
+}
+
+
+iframe {
+  border: none;
+  margin: 1.5%;
+}
+
+
+.featurette.videofix {
+  padding-top: 0px;
+}
+
+
+
+
+/* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+
+    }
+
+.back {
+  text-align: center;
+}
+.navbar-inverse .btn-navbar:hover   {
+    background-color: #FF8926;
+    background-image: none;
+}
+
+
+
+
+footer {
+  background: #337C61;
+  color: #FCFAF7;
+  opacity: .85;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  width: 100%;
+  
+}
+
+
+
+a.footer-link {
+  color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+a.footer-link:hover{
+  color: #FF7400;
+  text-decoration: none;
+}
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0A181F;
+  text-decoration: none;
+}
+
+#up {
+  color: #337C61;
+  margin: 10%;
+}
+a#up:hover {
+  color: #FF7400;
+}
+
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FF7400;
+  padding: 2px 10px;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: white;
+}
+
+.navbar .nav > li > a {
+  padding: 1px 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 979px) {
+  .carousel {
+    display: none;
+  }
+
+  .hero-unit h1 {
+    font-size: xxx-large;
+    padding: 25px 2% 0 2%;
+  }
+  
+  .hero {
+    font-size: 1.2em;
+    padding: 10px 2% 0 2%;
+  }
+
+  .hero-unit {
+    padding: 3% 2% 3% 2%;
+
+  }
+  .featurette-heading {
+    font-size: xx-large;
+  }
+  .frontpage h1{
+  margin-top: 0;
+}
+  .img-circle {
+    width: 400px;
+    height: 400px;
+  }
+  .navbar .btn-navbar {
+    margin-top: 7px;
+  }
+  .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: white;
+  }
+  .navbar-inverse .nav-collapse .nav > li > a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background-color: #57C77A;
+  }
+  .navbar-inverse .btn-navbar {
+  background-color: #57C77A;
+  *background-color: #57C77A;
+  background-image: none;
+  border-color: none;
+  
+}
+.navbar-inverse .btn-navbar a:hover{
+  background-color: #57C77A;
+  
+ }
+
+.navbar .brand {
+  padding: 25px 10px 0;
+} 
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .hero-unit h1 {
+    font-size: xx-large;
+    padding: 25px 2% 0 2%;
+  }
+
+  .hero-unit {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  
+  .hero {
+    font-size: 1.2em;
+    padding: 10px 2% 0 2%;
+  }
+  
+  .pull-right {
+    width: 320px;
+    height: 180px;
+  }
+  
+  .img-circle {
+    width: 300px;
+    height: 300px;
+  }
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  
+
+  }
+
+@media (max-width: 480px) {
+
+  .hero {
+    font-size: 1em;
+  }
+  
+  .navbar-inverse .navbar-inner {
+      padding: 0;
+      line-height: 2.1em;
+  }
+  
+
+  .pull-right {
+    width: 320px;
+    height: 180px;
+  }
+
+  .img-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+

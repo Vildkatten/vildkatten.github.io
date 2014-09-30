@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>index</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Emil Jönsson" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" href="css/myStyle.css" />
+		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+
+		<!-- laddar in jquery från google -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/myScript.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<nav>
+				<a href='/' id="black">Svart</a>
+
+				<a href='/contact' id="white">Vit</a>
+			</nav>
+
+			<header>
+				<h1>Shopping Lista</h1>
+			</header>
+			<form id="tasks-form">
+
+				<input type="text" id="input" name="item" autofocus="autofocus" />
+				<input type="button" id="myButton" value="Add" />
+
+			</form>
+			
+			<p id="removeItem">
+				Klicka på varan för att ta bort
+			</p>
+			<ul id="showText">
+				
+			</ul>
+				<a id="itemClear" class="button" href="#"><span>Radera lista</span></a>
+			
+			<div>
+				<h2>Middagstips!</h2>
+				<ul class="rss">
+					
+				</ul>
+			</div>
+			<footer>
+				<p>
+					&copy; noCopyright by Emil Jonsson
+				</p>
+			</footer>
+		</div>
+	</body>
+	
+</html>
