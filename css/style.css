@@ -1,6 +1,6 @@
 
 body {
-  
+
   background-color: white;
 }
 
@@ -26,13 +26,13 @@ body {
   }
 
 .hero-unit {
-  background: #242728; 
+  background: #242728;
   color: #5EA58A;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
   border-right: 55px solid #FF8925;
-          
+
 }
 
 #front {
@@ -59,7 +59,7 @@ h2 {
 h2:first-letter {
   color: #FF8926;
   font-weight: bold;
-  font-size: 1.2em; 
+  font-size: 1.2em;
 }
 
 .hero-unit:first-letter {
@@ -95,22 +95,22 @@ h2:first-letter {
 }
 
 .navbar .brand {
-  
+
   padding: 25px 10px 5px;
   font-size: 3.2em;
   font-family: Arial, Sans-Serif;
   font-weight: bold;
-  
+
 }
 
 .navbar .nav {
-  
+
   margin: 10px 20px 0 0;
 
 }
 
 .navbar-inverse .nav > li > a:hover {
-  
+
   color: #FF7400;
 }
 
@@ -123,6 +123,11 @@ iframe {
 
 .featurette.videofix {
   padding-top: 0px;
+}
+
+.notice {
+  color: red;
+  font-size: 1.5em;
 }
 
 
@@ -179,7 +184,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 45px;
   width: 100%;
-  
+
 }
 
 
@@ -245,7 +250,7 @@ a#up:hover {
     font-size: xxx-large;
     padding: 25px 2% 0 2%;
   }
-  
+
   .hero {
     font-size: 1.2em;
     padding: 10px 2% 0 2%;
@@ -281,16 +286,16 @@ a#up:hover {
   *background-color: #57C77A;
   background-image: none;
   border-color: none;
-  
+
 }
 .navbar-inverse .btn-navbar a:hover{
   background-color: #57C77A;
-  
+
  }
 
 .navbar .brand {
   padding: 25px 10px 0;
-} 
+}
 
 }
 
@@ -310,17 +315,17 @@ a#up:hover {
     margin-right: -20px;
     margin-left: -20px;
   }
-  
+
   .hero {
     font-size: 1.2em;
     padding: 10px 2% 0 2%;
   }
-  
+
   .pull-right {
     width: 320px;
     height: 180px;
   }
-  
+
   .img-circle {
     width: 300px;
     height: 300px;
@@ -331,7 +336,7 @@ a#up:hover {
     margin-right: -20px;
     margin-left: -20px;
   }
-  
+
 
   }
 
@@ -340,12 +345,12 @@ a#up:hover {
   .hero {
     font-size: 1em;
   }
-  
+
   .navbar-inverse .navbar-inner {
       padding: 0;
       line-height: 2.1em;
   }
-  
+
 
   .pull-right {
     width: 320px;

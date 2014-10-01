@@ -1,0 +1,440 @@
+@charset "UTF-8";
+/* Neat 1.7.0.pre
+ * http://neat.bourbon.io
+ * Copyright 2012–2014 thoughtbot, inc.
+ * MIT License */
+/**
+ * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
+ *
+ * @type Bool
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,100italic,300italic,400,300,500);
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/**
+ * Makes an element a outer container by centring it in the viewport, clearing its floats, and setting its `max-width`.
+ *
+ * Although optional, using `outer-container` is recommended. The mixin can be called on more than one element per page, as long as they are not nested.
+ *
+ * @param {Number} $local-max-width ($max-width) - Max width to be applied to the element. Can be a percentage or a measure.
+ *
+ * @example scss
+ *  .element {
+ *    @include outer-container(100%);
+ *  }
+ *
+ * @example css
+ *  .element {
+ *    *zoom: 1;
+ *    max-width: 100%;
+ *    margin-left: auto;
+ *    margin-right: auto;
+ *  }
+ *
+ *  .element:before, .element:after {
+ *    content: " ";
+ *    display: table;
+ *  }
+ *
+ *  .element:after {
+ *    clear: both;
+ *  }
+ */
+/**
+ * Changes the display property used by other mixins called in the code block argument.
+ *
+ * @param {String} $display (block) - Display value to be used within the block. Can be `table` or `block`.
+ *
+ * @example scss
+ *   @include display(table) {
+ *    .display-table {
+ *      @include span-columns(6);
+ *     }
+ *   }
+ *
+ * @example css
+ *   // CSS
+ *   .display-table {
+ *      display: table-cell;
+ *      ...
+ *   }
+ */
+/**
+ * Changes the direction property used by other mixins called in the code block argument.
+ *
+ * @param {String} $direction (left-to-right) - Layout direction to be used within the block. Can be `left-to-right` or `right-to-left`.
+ *
+ * @example scss
+ *   @include direction(right-to-left) {
+ *    .right-to-left-block {
+ *      @include span-columns(6);
+ *     }
+ *   }
+ *
+ * @example css
+ *   // CSS
+ *   .right-to-left-block {
+ *     float: right;
+ *      ...
+ *   }
+ */
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative; }
+
+h1 {
+  font-size: 1.8125em;
+  line-height: 1.5; }
+  h1.product-title {
+    color: #db2486; }
+
+h2 {
+  font-size: 1.500em;
+  line-height: 1.5;
+  color: #089e4f; }
+  h2.hero-title {
+    color: #d4da31; }
+  h2.address-title {
+    text-align: left;
+    color: white; }
+  h2.product-title {
+    color: #db2486; }
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.5;
+  color: #6fb0e1; }
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em; }
+
+p {
+  font-size: 1.000em;
+  line-height: 1.5;
+  font-weight: 300; }
+
+a {
+  color: #3F3D40;
+  font-weight: 500;
+  text-decoration: none; }
+
+#mail {
+  color: white; }
+
+#map_canvas {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  height: 450px;
+  float: right; }
+  #map_canvas:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    #map_canvas {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #map_canvas:last-child {
+        margin-right: 0; } }
+
+header {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  header .product-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 42.64902%; }
+    header .product-logo:last-child {
+      margin-right: 0; }
+    header .product-logo img {
+      width: 100%;
+      height: auto; }
+    @media screen and (max-width: 1000px) {
+      header .product-logo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%; }
+        header .product-logo:last-child {
+          margin-right: 0; }
+        header .product-logo img {
+          width: 25%;
+          margin-left: 8em; } }
+  @media screen and (max-width: 1000px) and (max-width: 800px) {
+    header .product-logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 0%; }
+      header .product-logo:last-child {
+        margin-right: 0; }
+      header .product-logo figure {
+        margin: .1em; }
+      header .product-logo img {
+        width: 50%;
+        margin-left: .5em; } }
+
+  @media screen and (max-width: 1000px) and (max-width: 800px) and (max-width: 600px) {
+    header .product-logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 34.11922%; }
+      header .product-logo:last-child {
+        margin-right: 0; }
+      header .product-logo figure {
+        margin: .2em; }
+      header .product-logo img {
+        width: 40%; } }
+
+  header .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-transform: uppercase; }
+    @media screen and (max-width: 800px) {
+      header .menu {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        text-align: right;
+        position: inherit; }
+        header .menu:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 600px) {
+      header .menu {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center; }
+        header .menu:last-child {
+          margin-right: 0; } }
+  header ul li {
+    display: inline-block;
+    margin-right: 2em; }
+    @media screen and (max-width: 600px) {
+      header ul li {
+        margin-right: 1em; } }
+    header ul li.active {
+      border-bottom: 2px solid #db2486; }
+
+footer {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6fb0e1; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer .footer-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background: white; }
+    footer .footer-logo:last-child {
+      margin-right: 0; }
+    footer .footer-logo .product-logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-left: 38.38412%; }
+      footer .footer-logo .product-logo:last-child {
+        margin-right: 0; }
+      footer .footer-logo .product-logo img {
+        width: 100%;
+        height: auto; }
+  footer .adress {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    padding: 2.35765%;
+    color: white; }
+    footer .adress:last-child {
+      margin-right: 0; }
+    footer .adress span {
+      display: block;
+      font-style: normal; }
+    @media screen and (max-width: 800px) {
+      footer .adress {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center; }
+        footer .adress:last-child {
+          margin-right: 0; }
+        footer .adress .address-title {
+          text-align: center; } }
+
+.hero {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/cover.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px; }
+  .hero:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .hero img {
+    width: 100%;
+    height: auto; }
+  .hero figure {
+    margin: 0; }
+  .hero .overlay {
+    z-index: 10;
+    position: absolute;
+    margin-top: 400px;
+    background: black;
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    color: white; }
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 500px; }
+
+  .hero .overlay {
+    margin-top: 300px; } }
+@media screen and (max-width: 800px) {
+  .hero {
+    height: 400px; }
+
+  .hero .overlay {
+    margin-top: 200px; } }
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 300px; }
+
+  h2 {
+    font-size: .9em; }
+
+  .hero .overlay {
+    display: none; } }
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 200px; }
+
+  .hero .overlay {
+    margin-top: 25px; } }
+.product {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; }
+  .product:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .product blockquote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    font-weight: 300;
+    font-style: italic; }
+    .product blockquote:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 800px) {
+      .product blockquote {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 2.35765%; }
+        .product blockquote:last-child {
+          margin-right: 0; } }
+  .product figure img {
+    width: 100%;
+    height: auto; }
+  .product .body-text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 12.79471%; }
+    .product .body-text:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      .product .body-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0;
+        padding: 2.35765%; }
+        .product .body-text:last-child {
+          margin-right: 0; } }
+
+.background-text {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #089e4f;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .background-text:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .background-text .background-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .background-text .background-info:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 800px) {
+      .background-text .background-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 2.35765%; }
+        .background-text .background-info:last-child {
+          margin-right: 0; } }
+  .background-text h1 {
+    color: white; }
+  .background-text p {
+    color: white; }
