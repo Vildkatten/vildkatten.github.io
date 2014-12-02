@@ -1,0 +1,36 @@
+{
+    "hpub": 1,
+    "title": "Poetry Slammers",
+    "author": ["Poetry SLam"],
+    "creator": ["M. Hansson, E. Jonsson, L. Malmberg, A. Reyes, R. Riesbeck, M. Waitong"],
+    "date": "2013-06-11",
+    "url": "http://digitalmonkey.se",
+
+    "orientation": "both",
+    "zoomable": false,
+
+    "-baker-background": "#000000",
+    "-baker-vertical-bounce": true,
+    "-baker-media-autoplay": true,
+    "-baker-background-image-portrait": "gfx/background-portrait.png",
+    "-baker-page-numbers-color": "#000000",
+
+    "contents": [
+                 "Book Cover.html",
+                 "Book Index.html",
+                 "index.html",
+                 "Part1-01.html",
+                 "Part1-02.html",
+                 "Part1-03.html",
+                 "Part1-04.html",
+                 "Part1-05.html",
+                 "Part2-01.html",
+                 "Part3-01.html",
+                 "Part3-02.html",
+                 "Part4-01.html",
+                 "Part4-02.html",
+                 "Part4-03.html",
+                 "Part4-04.html",
+                 "Tail.html"
+                 ]
+}
