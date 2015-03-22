@@ -235,13 +235,21 @@ a#up:hover {
   padding: 1px 10px;
 }
 
-
+#date {
+  color: white;
+  float: right;
+  font-size: 2em;
+  margin-top: 13px;
+}
 
 
 
 
 
 @media (max-width: 979px) {
+  #date {
+    display: none;
+  }
   .carousel {
     display: none;
   }
