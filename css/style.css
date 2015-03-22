@@ -242,12 +242,23 @@ a#up:hover {
   margin-top: 13px;
 }
 
+#time {
+  margin-left: 10px;
+  color: rgb(255,137,37);
+  float: right;
+  font-size: 2em;
+  margin-top: 13px;
+}
+
 
 
 
 
 @media (max-width: 979px) {
   #date {
+    display: none;
+  }
+  #time {
     display: none;
   }
   .carousel {
