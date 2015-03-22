@@ -238,8 +238,8 @@ a#up:hover {
 #date {
   color: white;
   float: right;
-  font-size: 2em;
-  margin-top: 13px;
+  font-size: 1.5em;
+  margin-top: 19px;
 }
 
 #time {
@@ -247,7 +247,7 @@ a#up:hover {
   color: rgb(255,137,37);
   float: right;
   font-size: 2em;
-  margin-top: 13px;
+  margin-top: 16px;
 }
 
 
