@@ -27,6 +27,7 @@
     		var seconds = time.getSeconds();
     		minutes = addZero(minutes);
     		seconds = addZero(seconds);
+    		hour = addZero(hour);
 
     		document.getElementById('time').innerHTML = hour + ":" + minutes + ":" + seconds;
 
