@@ -31,6 +31,7 @@
 
     		document.getElementById('time').innerHTML = hour + ":" + minutes + ":" + seconds;
 
+
     		var t = setTimeout(function(){
     			startTime();
     		},500);
@@ -48,6 +49,26 @@
     			i = i;
     			return i;
     		}
+    	}
+    	window.onscroll = scroll;
+    	var position = window.pageYOffset;
+
+
+    	function scroll () {
+    		var scrollAmount = window.pageYOffset;
+    		console.log(position+' pos ' + scrollAmount + 'scrollAmount');
+    		if(scrollAmount < position){
+    			setTimeout(function(){
+    				document.querySelector('.navbar-inverse').style.display = 'block';
+    			}, 200);
+
+    	}else{
+    		setTimeout(function(){
+    			document.querySelector('.navbar-inverse').style.display = 'none';
+    		}, 300);
+
+    	}
+    	position = scrollAmount;
     	}
 
     });
