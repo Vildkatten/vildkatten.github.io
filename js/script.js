@@ -4,7 +4,7 @@
     });
 
     	$("#up").click(function(event) {
-    	$(window).scrollTo( 0, 500);
+    	$('html, body').animate({scrollTop:0}, 500);
 });
 
     	function startDate(){
