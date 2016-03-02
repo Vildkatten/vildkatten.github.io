@@ -56,7 +56,7 @@
 
     	function scroll () {
     		var scrollAmount = window.pageYOffset;
-    		console.log(position+' pos ' + scrollAmount + 'scrollAmount');
+    		
     		if(scrollAmount < position){
     			setTimeout(function(){
     				document.querySelector('.navbar-inverse').style.display = 'block';
