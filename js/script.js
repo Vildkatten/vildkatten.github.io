@@ -56,16 +56,17 @@
 
     	function scroll () {
     		var scrollAmount = window.pageYOffset;
-    		
-    		if(scrollAmount < position){
-    			setTimeout(function(){
-    				document.querySelector('.navbar-inverse').style.display = 'block';
-    			}, 200);
 
-    	}else{
-    		setTimeout(function(){
+    		if(scrollAmount < position){
+                console.log(scrollAmount + position)
+    			// setTimeout(function(){
+    				document.querySelector('.navbar-inverse').style.display = 'block';
+    			// }, 200);
+
+    	}else if(scrollAmount > position && scrollAmount > 100){
+    		// setTimeout(function(){
     			document.querySelector('.navbar-inverse').style.display = 'none';
-    		}, 300);
+    		// }, 300);
 
     	}
     	position = scrollAmount;
