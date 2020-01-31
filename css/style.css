@@ -10,8 +10,8 @@ body {
   margin-top: 20px;
 }
 
-.navbar {
-  -webkit-backface-visibility: hidden;
+.navbar .navbar-inverse .navbar-inner .navbar-fixed-top {
+  backface-visibility: hidden;
 }
 
 
