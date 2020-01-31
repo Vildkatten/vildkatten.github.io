@@ -1,219 +1,280 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Emil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I am Emil Jönsson, a front-end web developer from the southern part of Sweden. This is my online portfolio where I showcase my works.">
-    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">
-    <meta name="author" content="Emil Jönsson">
+    <meta name="description" content="I am Emil Jönsson. This is my online portfolio">
+    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">    <title>Online portfolio of Emil Jönsson</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
     <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="favicon.png">
 
-  <script type="text/javascript">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
 
+        <!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="favicon.png">
+
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37297094-1']);
   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
+</head>
+<body>
 
-  </head>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Portfolio</h1>
+            <h2 class="brand-tagline">Showing my stuff</h2>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            menu
-          </a>
-          <a class="brand" href="index.html">Emil Jönsson</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html"><i class="icon-home icon-white icon-2x"></i> home</a></li>
-              <li class="active"><a href="projects.html"><i class="icon-briefcase icon-2x"></i> projects</a></li>
-              <li><a href="prototyping.html"><i class="icon-cogs icon-2x"></i> prototyping</a></li>
-            </ul>
-            <div id="time-container">
-            <p id="time"></p>
-            <p id="date"></p>
-            </div>
-          </div><!--/.nav-collapse -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="index.html">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="prototyping.html">Prototyping</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
     </div>
 
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
 
 
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="hero-unit">
-            <h1>My projects</h1>
-            <p class="hero">Here is a collection of web and app projects I have done or been involved in. Most of the projects have been finished in about a week's time</p>
-          </div>
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Campaign Site</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Site made for Idala Vingård and their Swedish julbord. I coded this page from a psd file I got from my designer at Inka Interactive AB. The site is no longer available.
+                        </p>
+                    </div>
+                    <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of campaign site"
+                                         class="pure-img-responsive"
+                                         src="img/projectimg/idala.jpg">
+                    </div>
+                      </div>
+                </section>
+
+            <section class="post">
+                <header class="post-header">
+
+                    <h2 class="post-title">Poetry Slammers</h2>
+
+
+                </header>
+
+                <div class="post-description">
+                    <p>
+                        This is an e-magazine where Swedish poetry slammers got their works published in a new way. I collaborated with these fine people, Amanda Reyes, Magnus Waitong, Michael Hansson, Roger Riesbäck and Linus Malmberg. My role in this project were to handle all technical issues, such as sound implementation, transfer text into HTML, CSS fine-tuning, publishing to Appstore. The magazine is unfortunately no longer available in the Appstore.
+                    </p>
+                </div>
+                <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <a href="http://vildkatten.github.io/digitalmonkey/">
+                                    <img alt="Photo of app for mobile device"
+                                         class="pure-img-responsive"
+                                         src="img/projectimg/poetryslammers.png">
+                                </a>
+                              </div>
+                                </div>
+            </section>
+
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title">Quotify</h2>
+            </header>
+
+            <div class="post-description">
+                <p>
+                    The world's most famous and appreciated quotes compressed into one single app. But that's not all! In this app you can quote yourself and share it on Facebook. Compatible with Android and available for free on Google Play!
+                </p>
+            </div>
+            <div class="post-images pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <a href="http://vildkatten.github.io/quotify/">
+                                <img alt="Photo of app for mobile device"
+                                     class="pure-img-responsive"
+                                     src="img/projectimg/apps.png">
+                            </a>
+                          </div>
+                            </div>
+        </section>
+
+    <section class="post">
+        <header class="post-header">
+            <h2 class="post-title">Video clip</h2>
+        </header>
+
+        <div class="post-description">
+            <p>
+                A collaboration project with Amanda Reyes, David Gaidos, Linus Malmberg and I. My role in this project was directing and filming most of the shots. I was also involved in post production with editing and visual effects. Check it out!
+            </p>
         </div>
-       </div>
+        <div class="post-images pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                            <iframe src="http://www.youtube.com/embed/-JD7dhQUpSA" width="512" height="288"></iframe>
+                          </div>
+                            </div>
+    </section>
 
-       <!-- START THE FEATURETTES -->
-       <div class="container-fluid">
+<section class="post">
+    <header class="post-header">
+        <h2 class="post-title">Company website</h2>
+    </header>
 
-         <div class="featurette">
-        <img class="featurette-image pull-right img-circle" src="img/idala.jpg" alt="link to idalajulbord.se website">
-        <h2 class="featurette-heading">Campaign Site </h2><span class="muted lead">Idala Vingård </span>
-        <p class="lead">Site made for Idala Vingård and their Swedish julbord. I coded this page from a psd file I got from my designer at Inka Interactive AB. The site is no longer available.</p>
+    <div class="post-description">
+        <p>
+            Website made for a construction company. Optimized for smartphones, tablets, desktops and TV-sets.
+        </p>
+    </div>
+    <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <a href="http://petersbygg.com/">
+                        <img alt="Photo of app for mobile device"
+                             class="pure-img-responsive"
+                             src="img/projectimg/petersbygg.jpg">
+                    </a>
+                  </div>
+                    </div>
+</section>
+
+<section class="post">
+    <header class="post-header">
+        <h2 class="post-title">Shopping list web app</h2>
+    </header>
+
+    <div class="post-description">
+        <p>
+            Simple shopping list, especially useful for mobile use. If you don't know what to buy, there is a rss-feed with recipes from Arla.
+        </p>
+    </div>
+    <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <a href="http://vildkatten.github.io/shoppinglist/">
+                        <img alt="Photo of app for mobile device"
+                             class="pure-img-responsive"
+                             src="img/projectimg/shoppinglist.png">
+                    </a>
+                  </div>
+                    </div>
+</section>
+
+<section class="post">
+    <header class="post-header">
+        <h2 class="post-title">Video demo</h2>
+    </header>
+
+    <div class="post-description">
+        <p>
+            A video demo using the new video-tag. No real use, just experimentation of what's possible with HTML5. Best user experience in Firefox browser.
+        </p>
+    </div>
+    <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <a href="http://vildkatten.github.io/videodemo/">
+                        <img alt="Photo of app for mobile device"
+                             class="pure-img-responsive"
+                             src="img/projectimg/videodemo.png">
+                    </a>
+                  </div>
+                    </div>
+</section>
+
+
+<section class="post">
+    <header class="post-header">
+        <h2 class="post-title">A4-leaflet</h2>
+    </header>
+
+    <div class="post-description">
+        <p>
+            A four-sided A4-leaflet mainly produced for print. The topic discussed in the leaflet are what factors to consider, when designing and publishing for print and web.
+        </p>
+    </div>
+    <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <a href="http://vildkatten.github.io/assets/design.pdf">
+                        <img alt="Photo of app for mobile device"
+                             class="pure-img-responsive"
+                             src="img/projectimg/pdf.jpg">
+                    </a>
+                  </div>
+                    </div>
+</section>
+
+<section class="post">
+    <header class="post-header">
+        <h2 class="post-title">Gamer site</h2>
+    </header>
+
+    <div class="post-description">
+        <p>
+            I have developed this website for a gaming clan. It has a standard Wordpress theme for now, but I am updating it continuosly. It features a forum from Vanilla forums. Everything is open-source, which is the way I like to work. I am the webmaster and member of this fantastic clan btw. :)
+        </p>
+    </div>
+    <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <a href="http://intehelthundra.se/">
+                        <img alt="Photo of app for mobile device"
+                             class="pure-img-responsive"
+                             src="img/projectimg/intehelthundra.png">
+                    </a>
+                  </div>
+                    </div>
+</section>
+</div>
+
+
+
+
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!" class="pure-menu-link">Mail</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/EmilDigital" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="https://www.linkedin.com/in/emilj%C3%B6nsson/" class="pure-menu-link">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
 
 
-      <hr class="featurette-divider">
-
-        <div class="featurette">
-        <a href="digitalmonkey">
-        <img class="featurette-image pull-right img-circle" src="img/poetryslammers.png" alt="link to Poetry Slammers website"></a>
-        <h2 class="featurette-heading">Poetry Slammers </h2><span class="muted lead">Newsstand app </span>
-        <p class="lead">This is an e-magazine where Swedish poetry slammers got their works published in a new way. I collaborated with these fine people, <a href="http://amyreyes.se">Amanda Reyes</a>, <a href="http://winaia.se">Magnus Waitong</a>, <a href="http://subarashi.se">Michael Hansson</a>, <a href="http://rogerswebbbyra.se">Roger Riesbäck</a> and <a href="http://lynus.se">Linus Malmberg</a>. My role in this project were to handle all technical issues, such as sound implementation, transfer text into HTML, CSS fine-tuning, publishing to Appstore. The magazine is unfortunately no longer available in the Appstore. </p>
-
-
-        <hr class="featurette-divider">
-
-       <div class="featurette">
-        <a href="quotify">
-        <img class="featurette-image pull-right img-circle" src="img/apps.png" alt="link to Quotify website"></a>
-        <h2 class="featurette-heading">Quotify </h2><span class="muted lead">Write your own quotes. </span>
-        <p class="lead">The world's most famous and appreciated quotes compressed into one single app. But that's not all! In this app you can quote yourself and share it on Facebook. Compatible with Android and available for free on Google Play!</p>
-        <a href="https://play.google.com/store/apps/details?id=se.mobail.quotify">
-  <img alt="Get it on Google Play"
-       src="img/google-play-badge.png" /></a>
-        </div>
-
-
-      <hr class="featurette-divider">
-
-       <div class="featurette videofix">
-        <iframe class="pull-right" width="512" height="288" src="http://www.youtube.com/embed/-JD7dhQUpSA"></iframe>
-        <h2 class="featurette-heading">Movie clip</h2><span class="muted lead">Fanboys step up their game. </span>
-        <p class="lead">A collaboration project with <a href="http://amyreyes.se">Amanda Reyes</a>, David Gaidos, <a href="http://lynus.se">Linus Malmberg</a> and I. My role in this project was directing and filming most of the shots. I was also involved in post production with editing and visual effects. Check it out! </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="http://petersbygg.com">
-        <img class="featurette-image pull-right img-circle" src="img/petersbygg.jpg" alt="link to petersbygg.com"></a>
-        <h2 class="featurette-heading">Company website </h2><span class="muted lead">Optimized for mobile use. </span>
-        <p class="lead">Website made for a construction company. Optimized for smartphones, tablets, desktops and TV-sets. </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="shoppinglist">
-        <img class="featurette-image pull-right img-circle" src="img/shoppinglist.png" alt="link to shopping list"></a>
-        <h2 class="featurette-heading">Shopping list webapp </h2><span class="muted lead">Optimized for mobile use. </span>
-        <p class="lead">Simple shopping list, especially useful for mobile use. If you don't know what to buy, there is a rss-feed with recipes from <a href="http://www.arla.se">Arla</a>.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="videodemo">
-        <img class="featurette-image pull-right img-circle" src="img/videodemo.png" alt="link to video demo"></a>
-        <h2 class="featurette-heading">Video demo </h2><span class="muted lead">The capabilities of the video-tag. </span>
-        <p class="lead">A video demo using the new video-tag. No real use, just experimentation of what's possible with HTML5. Best user experience in <a href="http://www.mozilla.org">Firefox </a>browser.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="assets/design.pdf">
-        <img class="featurette-image pull-right img-circle" src="img/pdf.jpg" alt="link to pdf"></a>
-        <h2 class="featurette-heading">A4-leaflet </h2><span class="muted lead">Print assignment </span>
-        <p class="lead">A four-sided A4-leaflet mainly produced for print. The topic discussed in the leaflet are what factors to consider, when designing and publishing for print and web.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="http://intehelthundra.se">
-        <img class="featurette-image pull-right img-circle" src="img/intehelthundra.png" alt="link to website"></a>
-        <h2 class="featurette-heading">Website </h2><span class="muted lead">intehelthundra.se </span>
-        <p class="lead">I have developed this website for a gaming clan. It has a standard <a href="http://wordpress.org">Wordpress</a> theme for now, but I am updating it continuosly. It features a forum from <a href="http://vanillaforums.org/">Vanilla forums</a>. Everything is open-source, which is the way I like to work. I am the webmaster and member of this fantastic clan btw. :)</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <a href="emildigital/index.htm">
-        <img class="featurette-image pull-right img-circle" src="img/oldwebsite.png" alt="link to previous website"></a>
-        <h2 class="featurette-heading">Previous version</h2><span class="muted lead">First attempt. </span>
-        <p class="lead">This is the previous version of my online portfolio and my very first attempt in making a HTML5-based website. This is just to see my evolution as a web developer, so be nice. </p>
-      </div>
-
-      <div class="back">
-       <a id="up" href="#"><i class="icon-double-angle-up icon-4x"></i></a>
-      </div>
-
-      </div> <!-- /container-fluid -->
-
-      </div><!-- /END THE FEATURETTES -->
-
-      <footer>
-
-        <div class="row-fluid">
-
-            <div class="span12">
-
-        <a class="footer-link" href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!"><i class="icon-envelope icon-3x"></i></a>
-
-        <a class="footer-link" href="https://twitter.com/EmilDigital" target="_blank"><i class="icon-twitter icon-3x"></i></a>
-
-        <a class="footer-link" href="http://se.linkedin.com/pub/emil-j%C3%B6nsson/5b/16b/b82" target="_blank"><i class="icon-linkedin-sign icon-3x"></i></a>
-
-        </div>
-        </div>
-
-
-      </footer>
-
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
-
-
-  </body>
+</body>
 </html>

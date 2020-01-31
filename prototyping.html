@@ -1,38 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Emil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I am Emil Jönsson, a front-end web developer from the southern part of Sweden. This is my online portfolio where I showcase my works.">
-    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">
-    <meta name="author" content="Emil Jönsson">
+    <meta name="description" content="I am Emil Jönsson. This is my online portfolio">
+    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">    <title>Online portfolio of Emil Jönsson</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
     <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="favicon.png">
 
-  <script type="text/javascript">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
 
+        <!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="favicon.png">
+
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37297094-1']);
   _gaq.push(['_trackPageview']);
@@ -44,132 +41,149 @@
   })();
 
 </script>
+</head>
+<body>
 
-  </head>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Portfolio</h1>
+            <h2 class="brand-tagline">Showing my stuff</h2>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            menu
-          </a>
-          <a class="brand" href="index.html">Emil Jönsson</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html"><i class="icon-home icon-white icon-2x"></i> home</a></li>
-              <li><a href="projects.html"><i class="icon-briefcase icon-2x"></i> projects</a></li>
-              <li class="active"><a href="prototyping.html"><i class="icon-cogs icon-2x"></i> prototyping</a></li>
-            </ul>
-
-            <div id="time-container">
-              <p id="time"></p>
-              <p id="date"></p>
-            </div>
-          </div><!--/.nav-collapse -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="index.html">Intro</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+
+
+                    <!-- A single blog post -->
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">Project Women's World</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p>
+                              The brief was to find new ways to get women to join the army, and this is the result me and my collegue Maria Rundqvist came up with. Our approach was to create an object, the orb, that would link the user with other women from the armies around the world as well as for the user to get enlightened. It’s basically a information system using an orb as a remote control. The system uses Arduino microcontrollers, wireless Xbee shield, accelerometer and Processing.
+                        </div>
+                        <div class="post-images pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <iframe src="https://www.youtube.com/embed/J5LA2VRB0yw" width="480" height="360"></iframe>
+                                </div>
+                    </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">The briefing box</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Mission briefing system. You log on to the system using a RFID card. Doing this you will see your assignment on the screen. Application will be terminated in 15 seconds.
+                        </p>
+                    </div>
+
+                    <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <iframe width="480" height="360" src="http://www.youtube.com/embed/ykVIsN8cI7c"></iframe>
+                            </div>
+
+                </section>
+
+            <section class="post">
+                <header class="post-header">
+                    <h2 class="post-title">Milliwear</h2>
+                </header>
+
+                <div class="post-description">
+                    <p>
+                        Application that suggests appropriate clothing and accessories, depending on temperature and wind speed, using live feed from Pachube.
+                    </p>
+                </div>
+                <div class="post-images pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <iframe width="480" height="360" src="http://www.youtube.com/embed/gMuVfwJ2HVQ"></iframe>
+                        </div>
+            </section>
+
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title">The Ping Jacket</h2>
+            </header>
+
+            <div class="post-description">
+                <p>
+                    The Ping Jacket is a jacket that senses when somebody is coming at you from behind. An ultrasound sensor is stitched in the back of the jacket, and the lights on the arm indicates the distance between you and your encounter. Use for spying purposes and whenever you need "an eye in the back".
+                </p>
+            </div>
+            <div class="post-images pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <iframe width="480" height="360" src="http://www.youtube.com/embed/zvsuJY6h7XU"></iframe>
+                    </div>
+        </section>
+
+    <section class="post">
+        <header class="post-header">
+            <h2 class="post-title">Tracko - A tracking device</h2>
+        </header>
+
+        <div class="post-description">
+            <p>
+                Cool device tracking a colored cloth using Processing client, webcam and Arduino board.
+            </p>
+        </div>
+        <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <iframe width="480" height="360" src="http://www.youtube.com/embed/kDne20abbgU"></iframe>
+                </div>
+    </section>
+
+    <section class="post">
+        <header class="post-header">
+            <h2 class="post-title">Motion-Tec</h2>
+        </header>
+
+        <div class="post-description">
+            <p>
+                Motion detection using ultrasound sensor. Communication between sensor and actuator (Arduino to Arduino).
+            </p>
+        </div>
+        <div class="post-images pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <iframe width="480" height="360" src="http://www.youtube.com/embed/myb-DCGdx4Q"></iframe>
+                </div>
+    </section>
+
     </div>
 
 
 
-
-      <div class="row-fluid">
-        <div class="hero-unit">
-            <h1>Physical prototyping</h1>
-            <p class="hero">Projects made in the course physical prototyping at Malmoe University. The theme was military equipment and the platform used is Arduino.</p>
-
-          </div>
-
-      </div>
-
-      <div class="container-fluid">
-
-      <div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="https://www.youtube.com/embed/J5LA2VRB0yw?rel=0"></iframe>
-        <h2 class="featurette-heading">Project Women's World</h2>
-        <p class="lead">The brief was to find new ways to get women to join the army, and this is the result me and my collegue Maria Rundqvist came up with. Our approach was to create an object, the orb, that would link the user with other women from the armies around the world as well as for the user to get enlightened. It’s basically a information system using an orb as a remote control. The system uses <a href="http://arduino.cc">Arduino microcontrollers</a>, wireless Xbee shield, accelerometer and <a href="http://processing.org/">Processing</a>.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="http://www.youtube.com/embed/ykVIsN8cI7c"></iframe>
-        <h2 class="featurette-heading">The briefing box</h2>
-        <p class="lead">Mission briefing system. You log on to the system using a RFID card. Doing this you will see your assignment on the screen. Application will be terminated in 15 seconds. </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-<div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="http://www.youtube.com/embed/gMuVfwJ2HVQ"></iframe>
-        <h2 class="featurette-heading">Milliwear</h2>
-       <p class="lead">Application that suggests appropriate clothing and accessories, depending on temperature and wind speed, using live feed from <a href="http://pachube.com">Pachube</a>. </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-<div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="http://www.youtube.com/embed/zvsuJY6h7XU"></iframe>
-        <h2 class="featurette-heading">The Ping Jacket</h2>
-        <p class="lead">The Ping Jacket is a jacket that senses when somebody is coming at you from behind. An ultrasound sensor is stitched in the back of the jacket, and the lights on the arm indicates the distance between you and your encounter. Use for spying purposes and whenever you need "an eye in the back". </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-<div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="http://www.youtube.com/embed/kDne20abbgU"></iframe>
-        <h2 class="featurette-heading">Tracko - A tracking device</h2>
-        <p class="lead">Cool device tracking a colored cloth using Processing client, webcam and <a href="http://arduino.cc/">Arduino board</a>. </p>
-      </div>
-
-      <hr class="featurette-divider">
-
-<div class="featurette videofix">
-         <iframe class="pull-right" width="480" height="360" src="http://www.youtube.com/embed/myb-DCGdx4Q"></iframe>
-        <h2 class="featurette-heading">Motion-Tec</h2>
-        <p class="lead">Motion detection using ultrasound sensor. Communication between sensor and actuator (Arduino to Arduino).</p>
-      </div>
-
-      <div class="back">
-       <a id="up" href="#"><i class="icon-double-angle-up icon-4x"></i></a>
-      </div>
-
-     </div> <!-- /container-fluid -->
-
-
-<footer>
-
-        <div class="row-fluid">
-
-            <div class="span12">
-
-        <a class="footer-link" href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!"><i class="icon-envelope icon-3x"></i></a>
-
-        <a class="footer-link" href="https://twitter.com/EmilDigital" target="_blank"><i class="icon-twitter icon-3x"></i></a>
-
-        <a class="footer-link" href="http://se.linkedin.com/pub/emil-j%C3%B6nsson/5b/16b/b82" target="_blank"><i class="icon-linkedin-sign icon-3x"></i></a>
-
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!" class="pure-menu-link">Mail</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/EmilDigital" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="https://www.linkedin.com/in/emilj%C3%B6nsson/" class="pure-menu-link">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
+</div>
 
 
-      </footer>
-
-
-
-
-
-    <!-- FOOTER -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
-
-  </body>
+</body>
 </html>

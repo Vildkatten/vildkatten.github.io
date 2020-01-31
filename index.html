@@ -1,164 +1,107 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Emil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I am Emil Jönsson, ux designer from the southern part of Sweden. This is my online portfolio where I showcase my works.">
-    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">
-    <meta name="author" content="Emil Jönsson">
+    <meta name="description" content="I am Emil Jönsson. This is my online portfolio">
+    <meta name="keywords" content="online, portfolio, physical, prototyping, computing, interaction, design, web, development, programming, html5, css3, javascript, arduino, video, editing, website, processing, frontend">    <title>Online portfolio of Emil Jönsson</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
     <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="favicon.png">
 
-    <script type="text/javascript">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
+
+        <!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="favicon.png">
+
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37297094-1']);
   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
-</script>
+                           </script>
+</head>
+<body>
 
-  </head>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Portfolio</h1>
+            <h2 class="brand-tagline">Showing my stuff</h2>
 
-  <body>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="prototyping.html">Prototyping</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
 
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            menu
-          </a>
-          <a class="brand" href="index.html">Emil Jönsson</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="index.html"><i class="icon-home icon-white icon-2x"></i> home</a></li>
-              <li><a href="projects.html"><i class="icon-briefcase icon-2x"></i> projects</a></li>
-              <li><a href="prototyping.html"><i class="icon-cogs icon-2x"></i> prototyping</a></li>
-            </ul>
-            <div id="time-container">
-              <p id="time"></p>
-              <p id="date"></p>
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Emil Jönsson" class="post-avatar" src="img/common/i.jpg">
+
+                        <h2 class="post-title">Introducing me</h2>
+
+
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            I am Emil Jönsson, UX designer originally from the southern parts of Sweden. This is my spot on the net which I use to show off my works. My interests are in web related stuff and all sorts of electronics.
+                        </p>
+                    </div>
+                </section>
             </div>
 
 
-          </div><!--/.nav-collapse -->
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!" class="pure-menu-link">Mail</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/EmilDigital" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="https://www.linkedin.com/in/emilj%C3%B6nsson/" class="pure-menu-link">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
 
-      <div class="hero-unit frontpage">
-      <div class="row-fluid">
-        <div class="span12">
-
-
-            <div class="row-fluid">
-            <div class="span8">
-            <h1 class="frontpage">Welcome to my little bubble!</h1>
-            <p class="hero">This is my portfolio which consist of web, apps and other electronic stuff. </p>
-          </div>
-
-
-
-            <div class="span4">
-            <div id="myCarousel" class="carousel slide">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-    <div class="active item"><a href="/shoppinglist"><img src="img/shoppinglist.png" alt="list"></a></div>
-    <div class="item"><a href="http://intehelthundra.se"><img src="img/intehelthundra.png" alt="website"></a></div>
-    <div class="item"><a href="/videodemo"><img src="img/videodemo.png" alt="demo"></a></div>
-
-    <div class="item"><a href="/emildigital"><img src="img/oldwebsite.png" alt="website"></a></div>
-
-    </div>
-
-
-    </div>
-    </div>
-
-          </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-
-      <div class="featurette" id="front">
-        <img class="featurette-image pull-left img-circle" src="img/i.jpg" alt="me">
-        <h2 class="featurette-heading">Me </h2><span class="muted lead">Front-end web developer / ux designer </span>
-        <p class="lead">I am Emil Jönsson, UX designer originally from the southern parts of Sweden. This is my spot on the net which I use to show off my works. My interests are in web related stuff and all sorts of electronics. </p>
-          <p class="lead">If you find something interesting and want to know more, just contact <a href="mailto:emil.digital@gmail.com?Subject=Hello!">me</a>!</p>
-      </div>
-      <div class="back">
-        <a id="up" href="#"><i class="icon-double-angle-up icon-4x"></i></a>
-      </div>
-
-      
-
-       </div>
-
-      <footer>
-
-
-        <div class="row-fluid">
-
-            <div class="span12">
-
-        <a class="footer-link" href="mailto:emil.k.jonsson@gmail.com?Subject=Hello!"><i class="icon-envelope icon-3x"></i></a>
-
-        <a class="footer-link" href="https://twitter.com/EmilDigital" target="_blank"><i class="icon-twitter icon-3x"></i></a>
-
-        <a class="footer-link" href="http://se.linkedin.com/pub/emil-j%C3%B6nsson/5b/16b/b82" target="_blank"><i class="icon-linkedin-sign icon-3x"></i></a>
-
-
-
-        </div>
-        </div>
-
-
-      </footer>
-
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
-
-
-
-  </body>
+</body>
 </html>
