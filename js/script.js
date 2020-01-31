@@ -3,6 +3,9 @@
     interval: 4000,
     });
 
+	$("#up").click(function(event) {
+    	$('html, body').animate({scrollTop:0}, 500);
+});
 
 
     	function startDate(){
