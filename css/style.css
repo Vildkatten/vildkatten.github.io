@@ -10,10 +10,6 @@ body {
   margin-top: 20px;
 }
 
-.navbar .navbar-inverse .navbar-inner .navbar-fixed-top {
-  backface-visibility: hidden;
-}
-
 
 .navbar-inverse .navbar-inner{
   opacity: .85;
@@ -301,6 +297,10 @@ a#up:hover {
   .navbar .btn-navbar {
     margin-top: 7px;
   }
+	
+  .navbar .navbar-inverse .navbar-fixed-top {
+  backface-visibility: hidden;
+}
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
     color: white;
