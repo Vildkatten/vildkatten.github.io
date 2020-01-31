@@ -10,6 +10,11 @@ body {
   margin-top: 20px;
 }
 
+.navbar {
+  -webkit-backface-visibility: hidden;
+}
+
+
 .navbar-inverse .navbar-inner{
   opacity: .85;
   background: #337C61;
