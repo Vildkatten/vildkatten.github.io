@@ -11,7 +11,7 @@ body {
 }
 
  .navbar .navbar-inverse .navbar-fixed-top {
-  backface-visibility: hidden;
+  backface-visibility: hidden !important;
 }
 .navbar-inverse .navbar-inner{
   opacity: .85;
