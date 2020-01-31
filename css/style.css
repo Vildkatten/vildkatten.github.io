@@ -315,15 +315,6 @@ a#up:hover {
   background-color: #57C77A;
  }
 
-.navbar-fixed-top {
- top: 0;
- position: relative;
-}
-
-.navbar {	
- transform: translate3d(0,0,0);
-}
-
 .navbar .brand {
   padding: 25px 10px 0;
 }
